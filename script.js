@@ -1,7 +1,6 @@
 let chooseBtn = document.getElementById('burger__button'),
     burgerMenu = document.querySelector('.popup'),
-    header = document.querySelector ('.header__div'),
-    opened = false;
+    header = document.querySelector ('.header__div');
 
 chooseBtn.addEventListener('click', function() {
     burgerMenu.classList.toggle('popup-on')
@@ -20,7 +19,7 @@ chooseBtn.addEventListener('click', function() {
         if (window.pageYOffset > 50) {
             header.classList.add('header__active');} 
         else if (burgerMenu.classList.contains('popup-on')) {
-            
+
         }
         else {
             header.classList.remove('header__active');
