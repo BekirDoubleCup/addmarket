@@ -1,12 +1,14 @@
 let chooseBtn = document.getElementById('burger__button'),
     burgerMenu = document.querySelector('.popup'),
-    header = document.querySelector ('.header__div');
+    header = document.querySelector ('.header__div'),
+    opened = false;
 
 chooseBtn.addEventListener('click', function() {
     burgerMenu.classList.toggle('popup-on')
 });
 chooseBtn.addEventListener('click', function() {
-    header.classList.toggle('header__active')
+    if (window.pageYOffset < 50){
+    header.classList.toggle('header__active')}
 });
 
 chooseBtn.addEventListener('click', function() {
@@ -16,8 +18,11 @@ chooseBtn.addEventListener('click', function() {
 (function () {
     window.onscroll = () => {
         if (window.pageYOffset > 50) {
-            header.classList.add('header__active');
-        } else {
+            header.classList.add('header__active');} 
+        else if (burgerMenu.classList.contains('popup-on')) {
+            
+        }
+        else {
             header.classList.remove('header__active');
         }
     };

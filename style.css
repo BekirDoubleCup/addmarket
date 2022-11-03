@@ -1228,6 +1228,9 @@ footer{
     background-color: white;
     box-shadow: 0px 6px 10px rgb(105 117 135 / 20%);
   }
+  .header-menu__item a{
+    padding-right: 0px;
+  }
   .header__container{
     position: relative;
     padding: 15px 15px;
@@ -1273,6 +1276,7 @@ footer{
     border-bottom: 1px solid rgba(219, 219, 219, 0.4);
   }
   .header-menu__item__with-triangle{
+    margin-right: 0px;
     position: relative;
     padding: 15px;
     box-shadow: 0px 1px 2px rgba(143, 164, 169, 0.15);
@@ -1483,6 +1487,7 @@ footer{
   .burger__menu {
     display: block;
     margin-right: 0px;
+    padding: 0px 6px;
   }
   .header__menu{
     padding-left: 0px;
