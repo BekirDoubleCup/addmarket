@@ -69,6 +69,9 @@ textarea,
 select {
   font: inherit;
 }
+button{
+  cursor: pointer;
+}
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
@@ -81,7 +84,9 @@ select {
 }
 .page__wrapper{
   background: linear-gradient(180deg, rgba(172, 216, 239, 0.5) -2.24%, rgba(245, 250, 255, 0) 78.75%);
-
+}
+main{
+  padding-top: 40px;
 }
 
 body{
@@ -123,7 +128,7 @@ header{
 .main__logo-mobile{
   display: none;
 }
-.mail{
+.mail__button{
   display: none;
 }
 .header__menu{
@@ -138,15 +143,19 @@ header{
 }
 .header-menu__list{
   display: flex;
+  margin-right: 32px;
 }
 .header-menu__item{
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
+  margin-right: 32px;
+}
+.header-menu__list :last-child{
+  margin-right: 0px;
 }
 .header-menu__item a{
   color: #585858;
-  padding-right: 32px;
 }
 .header-menu__item a:hover,
 .header-menu__item a:target,
@@ -177,6 +186,7 @@ header{
   background: none;
   padding: 8px 24px 8px 24px;
   margin-right: 28px;
+  margin-left: 32px;
 }
 .header__button:hover,
 .header__button:target,
@@ -225,7 +235,6 @@ header{
   background-size: 50%;
   display: flex;
   position: relative;
-  margin-top: 27px;
 
 }
 .application__header{
@@ -873,9 +882,6 @@ footer{
     margin: 0 auto;
     margin-left: 60px;
   }
-  .application{
-    margin-top: 30px;
-  }
   .application__header{
     width: 904px;
   }
@@ -885,8 +891,8 @@ footer{
     background-repeat: no-repeat;
     background-size: 40%;
   }
-  .header-menu__item a{
-    padding-right: 16px;
+  .header-menu__item {
+    margin-right: 16px;
   }
   .header-phone__number{
     white-space: nowrap;
@@ -1295,7 +1301,7 @@ footer{
   .burger__button-close{
     background: url(./images/burger_back_close.svg) center center no-repeat;
   }
-  .mail{
+  .mail__button{
     display: block;
     border: none;
     outline: none;
